@@ -29,6 +29,10 @@
 #define PWM1_ISR__INTC_PRIOR_REG CYREG_CM0P_IPR5
 #define PWM1_ISR__INTC_SET_EN_REG CYREG_CM0P_ISER
 #define PWM1_ISR__INTC_SET_PD_REG CYREG_CM0P_ISPR    
+
+#ifdef __cplusplus
+extern "C" {
+#endif
     
 /* Interrupt Controller API. */
 void PWM1_ISR_Start(void);
@@ -50,6 +54,9 @@ void PWM1_ISR_Disable(void);
 void PWM1_ISR_SetPending(void);
 void PWM1_ISR_ClearPending(void);
 
+#ifdef __cplusplus
+}
+#endif
 
 /* Interrupt Controller Constants */
 

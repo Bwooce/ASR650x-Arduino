@@ -339,6 +339,9 @@ extern uint8  PWM1_initVar;
 /***************************************
 *        Function Prototypes
 ****************************************/
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void   PWM1_Init(void);
 void   PWM1_Enable(void);
@@ -396,6 +399,9 @@ void   PWM1_RestoreConfig(void);
 void   PWM1_Sleep(void);
 void   PWM1_Wakeup(void);
 
+#ifdef __cplusplus
+}
+#endif
 
 /***************************************
 *             Registers
